@@ -1,0 +1,159 @@
+body {
+    max-width: 100%;
+    max-height: 100%;
+    padding:0px;
+    margin:0px;
+    background-image: linear-gradient(#FFFFFF, #eadbcd);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow-X:hidden;
+  }
+  
+  .navbar{
+   width:100%;
+   height:100%;
+   position: flex;
+   display: inline-block;
+  }
+  .current {
+  text-decoration: underline;
+  color:white;
+  }
+  
+  .logo{
+    position:absolute;
+    width:12vw;
+    max-height:11vh;
+    padding:0px;
+    margin-left: 1.5vw;
+    margin-top: 1vw;
+  }
+  
+  .leftnav{
+    position:relative;
+    width:20%;
+    height:30vw;
+  }
+  .rightnav{
+    position:absolute;
+    width:50%;
+    height:20vw;
+    right:0;
+    top:0;
+  }
+  .rightcloud{
+    position:absolute;
+    width:100%;
+    height:20vw;
+    right:0;
+  }
+  .leftcloud{
+  position:absolute;
+  width:100%;
+  height:100%;
+  left:0;
+  }
+  .rightnav ul {
+    position: absolute;
+    font-family: 'Open Sans', sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    right:0;
+    width:95%;
+    height: auto;
+    margin-top:1vw;
+    font-size: 1.1vw;
+    display: inline-block;
+  }
+  
+  li {
+    float: left;
+    padding:4%;
+    margin-left:2%;
+  }
+  
+  li a {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    max-height: auto;
+    max-width: auto;
+    text-decoration: none;
+    white-space: nowrap;
+  }
+  
+  li a:hover {
+    color:grey;
+    text-decoration: underline;
+  }
+  
+  .pfp {
+    position:absolute;
+    width:3vw;
+    max-height:3vw;
+    padding:0vw;
+    margin-right: 1.5vw;
+    right:0;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  .search-return-book {
+  margin-left: 5%;
+  margin-top: 5%;
+  float: left;
+  width: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  padding: 0.1vw;
+  }
+  .search-return-book img {
+  width: 350px;
+  height: 500px;
+  padding: 0.5vw;
+  border-radius: 10%;
+  }
+
+  .search-return-book img:hover {
+  filter: brightness(50%);
+  cursor: pointer;
+  }
+  
+  .search-return-book a {
+  margin:0px;
+  padding:0px;
+  }
+  #searchbar{
+    margin-left:25%;
+    margin-top:-14%;
+}
+#searchfield{
+    width:70%;
+    height:50%;
+    padding:0.5%;
+    font-size: 20px;
+}
+#searchbutton{
+    width:30%;
+    height:50%;
+    padding:0.5%;
+    font-size: 20px;
+    margin-left:20%;
+    margin-top:1%;
+}
+#display{
+  margin-top:30px;
+}
+#display button {
+  font-size: 20px;
+  font-family: 'Open Sans', sans-serif;
+  border-radius: 10px;
+  padding:5px;
+  margin-left:10px;
+  box-shadow:inset 10 10 rgba(0,0,0,50%)
+}

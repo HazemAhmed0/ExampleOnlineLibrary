@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="../styles/bookadd.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,700;0,800;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">   
+    <title>Document</title>
+</head>
+<body>
+
+        <div class="leftnav">
+            <img src="../assets/lefttcloud.png" class="leftcloud">
+            <a href="../index.html"><img src="../assets/logo.png" class="logo"></a>
+        </div>
+        <div class="rightnav">
+            <img src="../assets/righttcloud.png" class="rightcloud">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="books.html">All Books</a></li>
+                <li><a href="#contact" class="current">Members</a></li>
+                <li><a href="search.html">Search</a></li>
+                <div id="display">
+                    <img src="../assets/user.png" class="pfp">
+                </div>
+              </ul>
+        </div>
+
+    <div id="main">
+            <form id="mform" onsubmit="return addbook(this.id.value, this.title.value, this.author.value, this.publishdate.value, this.desc.value, this.tags.value, this.cover.value)">
+                <label for="id">Book ID</label>
+                <input type="text" id="id" name="id" size="50" disabled="disabled" required><br><br>
+
+                <label for="title">Title</label>
+                <input type="text" id="title" name="title" size="50" required><br><br>
+
+                <label for="author">Author</label>
+                <input type="text" id="author" name="author" size="50" required><br><br>
+
+                <label for="publishdate">Published Date</label>
+                <input type="text" id="publishdate" name="publishdate" size="50" required><br><br>
+
+                <label for="desc">Short Description</label>
+                <textarea id="desc" name="desc" rows="5" cols="50" required></textarea><br><br><br><br><br>
+
+                <label for="tags">Tags [seperate by comma]</label>
+                <input type="text" id="tags" name="tags" size="50" required><br><br>
+
+                <label for="cover">
+                    Upload Book Cover [.png only]
+                    <input id="cover" type="file"name="cover" accept=".png" required/>
+                </label><br><br>
+
+                <input id="sub" type="submit" value="Add Book">
+
+
+
+
+            </form>
+    </div>
+    <script src="../scripts/booksData.js"></script>
+    <script src="../scripts/addbook.js"></script>
+    <script src="../scripts/signedIn.js"></script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">  
+    <title>Test Website Library</title>
+</head>
+<body>
+    <div class="navbar">
+        <a href="../index.html"><img src="../assets/logo.png" class="logo"></a>
+        <div class="leftnav">
+            <img src="../assets/lefttzig.png" class="leftcloud">
+        </div>
+        <div class="rightnav">
+            <img src="../assets/righttzig.png" class="rightcloud">
+        </div>
+        <ul>
+            <li><a href="../index.html" class="current">Home</a></li>
+            <li><a href="/views/books.html">All Books</a></li>
+            <li><a href="/views/members.html">Members</a></li>
+            <li><a href="/views/search.html">Search</a></li>
+          </ul>
+    </div>
+<div id="divCont">
+    <form id="form"><br><br>
+        <label for="username" id="label">Username: <input type="text" name="username" id="user"></label><br><br>
+        <label for="password" id="label">Password: <input type="password" name="password" id="pword"></label><br><br>
+        <input type="button" name="log in" value="Log In" id="login" onclick="logMembers()">
+        <div id="status"></div>
+        <br><br>
+        <p>Not signed in? <a href="signup.html">Sign Up Now</a></p>
+    </form>
+</div>
+<script src="../scripts/signin.js"></script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/detailsBook.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,700;0,800;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <title>Details</title>
+</head>
+<body> 
+    <div class="navbar">
+        <div class="leftnav">
+            <img src="../assets/lefttcloud.png" class="leftcloud">
+            <a href="../index.html"><img src="../assets/logo.png" class="logo"></a>
+        </div>
+        <div class="rightnav">
+            <img src="../assets/righttcloud.png" class="rightcloud">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="books.html">All Books</a></li>
+                <li><a href="members.html">Members</a></li>
+                <li><a href="search.html">Search</a></li>
+                <div id="display">
+                    <img src="../assets/user.png" class="pfp">
+                </div>
+              </ul>
+        </div>
+    </div>
+    <div id="BookDetailsMain">
+        <div id="ImageHolder">
+            <img id="BookImage" src="../books/book0.jpg"/><br>
+            <div id="rate">
+                <img src="../assets/star.png" onmouseover="HoverStar(this)" onmouseleave="LeaveStar()" onclick="Rate()" class="star" id="s1"></img>
+                <img src="../assets/star.png" onmouseover="HoverStar(this)" onmouseleave="LeaveStar()" onclick="Rate()" class="star" id="s2"></img>
+                <img src="../assets/star.png" onmouseover="HoverStar(this)" onmouseleave="LeaveStar()" onclick="Rate()" class="star" id="s3"></img>
+                <img src="../assets/star.png" onmouseover="HoverStar(this)" onmouseleave="LeaveStar()" onclick="Rate()" class="star" id="s4"></img>
+                <img src="../assets/star.png" onmouseover="HoverStar(this)" onmouseleave="LeaveStar()" onclick="Rate()" class="star" id="s5"></img>
+            </div>
+        </div>
+        <div id="TextHolder">
+            <div id="BookTitle">Al Ayam</div>
+            <br>
+            <div id="BookAuth">Taha Hussein</div>
+            <div id="BookDate">1926</div>
+            <div id="avalibility">Available</div>
+
+            
+            <hr>
+            <span id="BookDesc">The Days is a novelized autobiography in three volumes by the Egyptian professor Taha Hussein, 
+                published between 1926 and 1967. It deals with his childhood in a small village, then his studies in Egypt and 
+                France. It is one of the most popular works of modern Arabic literature.</span>
+            <div id="Tags">
+                <div class="tag">
+                    Autobiography
+                </div>
+                <div class="tag">
+                    Arabic
+                </div>
+            </div>
+            <div id="Remove">
+            </div>
+            <button id="borrow" onclick="Borrow()">Borrow Me!</button>
+        </div>
+        
+    </div>
+    <div id="testingdiv"></div>
+    <script src="../scripts/booksData.js"></script>
+    <script src="../scripts/books.js"></script>
+    <script src="../scripts/Allbooks.js"></script>
+    <script src="../scripts/bookInit.js"></script>
+    <script src="../scripts/signedIn.js"></script>
+</body>
+</html>

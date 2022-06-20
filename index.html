@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">  
+    <title>Test Website Library</title>
+</head>
+<body>
+    <script src="./scripts/booksData.js"></script>
+    <script src="./scripts/membersData.js"></script>
+    <script src="./scripts/home.js"></script>
+    <div class="navbar">
+        <a href="index.html"><img src="assets/logo.png" class="logo"></a>
+        <div class="leftnav">
+            <img src="assets/lefttzig.png" class="leftcloud">
+        </div>
+        <div class="rightnav">
+            <img src="assets/righttzig.png" class="rightcloud">
+        </div>
+        <ul>
+            <li><a href="index.html" class="current">Home</a></li>
+            <li><a href="./views/books.html">All Books</a></li>
+            <li><a href="./views/members.html">Members</a></li>
+            <li><a href="./views/search.html">Search</a></li>
+            <div id="display">
+            </div>
+          </ul>
+    </div>
+    <div class="info">
+    <h1 class="title">DIGITAL LIBRARY</h1>
+    <p>The future is now, with this library you'll be able
+        to book your books and find out information about them
+        whenever at a click of a mouse.
+    </p>
+    </div>
+    <img class="library" src="assets/library.svg">
+    <script src="/scripts/signedIn.js"></script>
+</body>
+</html>
