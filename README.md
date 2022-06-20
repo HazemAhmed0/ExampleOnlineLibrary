@@ -7,6 +7,4 @@
 ###        Bishoy Hany Kamel Mikhael 1807854
 
 
-#### In order to run this project you need to set up a live server, you can do so by downloading servez, or using the VSCode extensions Live Server
-#### The project starts from the index.html or the landing page, and from there the user is expected to press on the sign up page, after which the user
-#### will login and start using the system. 
+#### In order to run this project you need to set up a live server, you can do so by downloading servez, or using the VSCode extensions Live Server the project starts from the index.html or the landing page, and from there the user is expected to press on the sign up page, after which the user will login and start using the system. 
